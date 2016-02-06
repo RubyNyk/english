@@ -3,7 +3,7 @@ lock '3.4.0'
 
 `ssh-add` # need this to make key-forwarding work
 set :application, ‘english’
-set :repo_url, 'git@github.com:RubyNyk/english.git'
+set :repo_url, 'https://git@github.com:RubyNyk/english.git'
 set :deploy_to, '/home/immortal/english'
 set :log_level, :debug
 set :keep_releases, 5
