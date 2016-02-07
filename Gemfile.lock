@@ -168,7 +168,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  capistrano
   capistrano-passenger
   capistrano-rails
   coffee-rails (~> 4.1.0)
