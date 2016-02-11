@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:RubyNyk/english.git'
 set :deploy_to, '/home/immortal/english'
 set :log_level, :debug
 set :keep_releases, 5
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml', 'config/email.yml')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default branch is :master
