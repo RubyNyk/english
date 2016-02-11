@@ -19,6 +19,6 @@ class ApplyMailer < ApplicationMailer
 
     mail to: @email , 
          subject: "已收到申請 謝謝您的試聽申請 我們儘快安排您的試聽~!",
-         bcc: ["applicants@newyorkerr.to-email.com"]
+         bcc: ["nyk.clients.service@gmail.com"]
   end
 end
