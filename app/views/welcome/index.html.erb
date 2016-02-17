@@ -2667,21 +2667,21 @@
                                 <!-- contact form -->   
                                 <%= simple_form_for applicantmail do |f| %>
                                     <ul class="grid-50">
-                                        <%= f.input :name,  label: "Name:(姓名) #這個是必填項目哦~!", placeholder: "Name:(姓名) 中英文" %>
-                                        <%= f.input :email,  label: "E-Mail: #這個是必填項目哦~!", placeholder: "E-Mail:(請避免使用Yahoo雅虎信箱 會漏信)" %>
-                                        <%= f.input :cell, label: "請填寫你的行動電話 #這個是必填項目哦~!",  placeholder: "Cell-Phone:(行動電話)" %>
+                                        <%= f.input :name, label: 'Name:(姓名) #這個必填項目哦~!', placeholder: "Name:(姓名) 中英文" %>
+                                        <%= f.input :email, label: "E-Mail: #這個必填項目哦~!", placeholder: "E-Mail:(請避免使用Yahoo雅虎信箱 會漏信)" %>
+                                        <%= f.input :cell, label: "請填寫你的行動電話 #這個必填項目哦~!",  placeholder: "Cell-Phone:(行動電話)" %>
                                         <%= f.input :line, label: "請填寫你的LINE ID", placeholder: "- 如果有的話" %>
                                         <%= f.input :teachernation, label: "請選擇課程老師國籍", selected: "請選擇課程老師國籍" , collection: [:請選擇課程老師國籍, :美加籍老師, :英籍老師, :紐澳籍老師, :菲籍老師] %>
                                         <%= f.input :major, label: "進修項目", selected: "選擇進修項目" , collection: [:請選擇進修的項目, :商業英文, :職業領域專業英文, :準備IELTS考試, :準備TOEIC考試, :準備TOEFL考試, :準備CAMBRIDGE各階段考試, :美式口音特訓專班, :一般生活旅遊會話英文, :全民英檢, :移民短期三個月密集課程, :英文初級生特別班_中文老師陪讀引導] %>
                                     </ul>  
                                     <ul class="grid-50">                        
-                                        <%= f.input :section, label: "預計可以正式上課的時段 #這個是必填項目哦~!",  required: false, as: :text, placeholder: "例如: 每週的一,三 , 五 8:00pm~8:50pm (用來預先排除衝堂用)" %>
+                                        <%= f.input :section, label: "預計可以正式上課時段 #這個必填項目哦~!",  required: false, as: :text, placeholder: "例如: 每週的一,三 , 五 8:00pm~8:50pm (用來預先排除衝堂用)" %>
                                     </ul>
                                     <ul class="grid-50">                        
-                                        <%= f.input :message,  required: false, as: :text, placeholder: "請問一下~! 您是從哪裏得知我們的資訊:" %>
+                                        <%= f.input :message, label: "備註或要提醒及告知我們的事項...",  required: false, as: :text, placeholder: "請問一下~! 您是從哪裏得知我們的資訊:" %>
                                     </ul>
                                     <div class="grid-100">                                                 
-                                        <%= f.button :submit, "確認寄出試聽課申請" %>
+                                        <%= f.button :submit, "寄出試聽課申請" %>
                                     </div>                     
                                 <% end %>                  
                             </div>

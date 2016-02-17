@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "紐約客線上英文 試聽申請來函"
+  default from: "newyorkerrs@gmail.com"
   layout 'mailer'
 end
