@@ -31,10 +31,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'simple_form', '~> 3.2.1'  
 
-gem 'capistrano', :group => :development
-gem 'capistrano-rails', :group => :development
-gem 'capistrano-passenger', :group => :development
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # gem 'capistrano-passenger', :group => :development
