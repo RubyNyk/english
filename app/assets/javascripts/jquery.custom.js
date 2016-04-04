@@ -479,7 +479,7 @@
                 
                 setTimeout ( function () {
                     el.animate({opacity: 1} , 1 );
-                },  k * 10 );
+                },  k * 1 );
                 
             });
         
@@ -494,7 +494,7 @@
                 
                 setTimeout ( function () {
                     el.animate({opacity: 1} , 1 );
-                },  k * 50 );
+                },  k * 1 );
                 
             });
         
