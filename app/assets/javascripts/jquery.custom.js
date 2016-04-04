@@ -83,11 +83,7 @@
 		/* YouTube Background Video
 		================================================== */
 		/* only play video on desktop devices */
-		if( !device.tablet() && !device.mobile() ) {
-			
-			$(".player").mb_YTPlayer();
-						
-		} else {
+		
 			
 			/* as a fallback we add a special class to the header which displays a poster image */ 
 			$('.hero').addClass('hero-poster-image');
@@ -99,15 +95,12 @@
 			$('#contact-section').addClass('parallax-banner-5');
 			$('#counter-section').addClass('parallax-banner-6');
 			
-			/* hide player */
-			$(".player").hide();
-			
-		}
+	
 		
 		
 		/* Parallax Effect - disabled for mobile devices
 		================================================== */	
-		if( !device.tablet() && !device.mobile() ) {
+		
 			
 			$('.parallax-banner-1').parallax("50%", 0.4); // Welcome Image
 			$('.parallax-banner-2').parallax("50%", 0.4); // Philosophy 
@@ -121,7 +114,7 @@
                 $(this).addClass('fixed');
             });
 			
-		}
+		
 		
 		/* Scroll to Main
 		================================================== */
@@ -177,7 +170,7 @@
 		});
 		 
 		$('.toTop').click(function() {
-			$('body,html').animate({ scrollTop:0 } , 1000);
+			$('body,html').animate({ scrollTop:0 } , 100);
 		});  
 		
 		
@@ -221,7 +214,7 @@
 		================================================== */
 		$('.portfolio-popup').magnificPopup({
 			type: 'image',
-			removalDelay: 500, //delay removal by X to allow out-animation
+			removalDelay: 10, //delay removal by X to allow out-animation
 			callbacks: {
 			beforeOpen: function() {
 				   this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
@@ -233,10 +226,10 @@
 		});
 		
 		$('.portfolio-popup-video').magnificPopup({
-			disableOn: 700,
+			disableOn: 70,
 			type: 'iframe',
 			mainClass: 'mfp-zoom-in',
-			removalDelay: 160,
+			removalDelay: 10,
 			preloader: false,	
 			fixedContentPos: false
 		});
@@ -245,7 +238,7 @@
 		================================================== */
 		$('.fee-popup').magnificPopup({
 			type: 'image',
-			removalDelay: 500, //delay removal by X to allow out-animation
+			removalDelay: 50, //delay removal by X to allow out-animation
 			callbacks: {
 			beforeOpen: function() {
 				   this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
@@ -257,10 +250,10 @@
 		});
 		
 		$('.fee-popup-video').magnificPopup({
-			disableOn: 700,
+			disableOn: 70,
 			type: 'iframe',
 			mainClass: 'mfp-zoom-in',
-			removalDelay: 160,
+			removalDelay: 10,
 			preloader: false,	
 			fixedContentPos: false
 		});
@@ -470,8 +463,8 @@
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.animate({opacity: 1} , 600 );
-				},  k * 50 );
+					el.animate({opacity: 1} , 1 );
+				},  k * 1 );
 				
 			});
 		
@@ -485,8 +478,8 @@
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.animate({opacity: 1} , 600 );
-				},  k * 50 );
+					el.animate({opacity: 1} , 1 );
+				},  k * 10 );
 				
 			});
 		
@@ -500,7 +493,7 @@
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.animate({opacity: 1} , 600 );
+					el.animate({opacity: 1} , 1 );
 				},  k * 50 );
 				
 			});
@@ -519,8 +512,8 @@
 					if( direction === 'down' && !$(this).hasClass('animated') ) {
 						
 						setTimeout ( function () {
-							el.animate({opacity: 1} , 600 );
-						}, k * 50 );
+							el.animate({opacity: 1} , 1 );
+						}, k * 1 );
 						
 					}							
 				
@@ -542,8 +535,8 @@
 					if( direction === 'down' && !$(this).hasClass('animated') ) {
 						
 						setTimeout ( function () {
-							el.animate({opacity: 1} , 600 );
-						}, k * 50 );
+							el.animate({opacity: 1} , 1 );
+						}, k * 1 );
 						
 					}							
 				
@@ -561,8 +554,8 @@
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.animate({opacity: 1} , 600 );
-				},  k * 50 );
+					el.animate({opacity: 1} , 1 );
+				},  k * 1 );
 				
 			});
 		
@@ -576,8 +569,8 @@
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.animate({opacity: 1} , 600 );
-				},  k * 50 );
+					el.animate({opacity: 1} , 1 );
+				},  k * 1 );
 				
 			});
 		
@@ -591,8 +584,8 @@
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.animate({opacity: 1} , 600 );
-				},  k * 50 );
+					el.animate({opacity: 1} , 1 );
+				},  k * 1 );
 				
 			});
 		
@@ -606,13 +599,13 @@
 					
 					setTimeout ( function () {
 							$('#about-section header').find('.section-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#about-section header').find('.section-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_about , 1000 );
+					setTimeout( animate_about , 1 );
 					
 					$(this).addClass('animated');
 						
@@ -628,11 +621,11 @@
 					
 					setTimeout ( function () {
 							$('#parallax-section-2 header').find('.parallax-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#parallax-section-2 header').find('.parallax-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
 					$(this).addClass('animated');
 										
@@ -649,13 +642,13 @@
 					
 					setTimeout ( function () {
 							$('#team-section header').find('.section-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#team-section header').find('.section-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_member , 1000);
+					setTimeout( animate_member , 1);
 					
 					$(this).addClass('animated');
 						
@@ -670,13 +663,13 @@
 					
 					setTimeout ( function () {
 							$('#service-section header').find('.parallax-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#service-section header').find('.parallax-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_service , 1000);
+					setTimeout( animate_service , 1);
 					
 					$(this).addClass('animated');			
 					
@@ -691,13 +684,13 @@
 					
 					setTimeout ( function () {
 							$('#portfolio-section header').find('.section-title').animate({ opacity: 1 }).addClass('animated');
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#portfolio-section header').find('.section-slogan').animate({ opacity: 1 }).addClass('animated');
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_portfolio , 1000);
+					setTimeout( animate_portfolio , 1);
 					
 					$(this).addClass('animated');		
 					
@@ -711,13 +704,13 @@
 					
 					setTimeout ( function () {
 							$('#fee-section header').find('.section-title').animate({ opacity: 1 }).addClass('animated');
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#fee-section header').find('.section-slogan').animate({ opacity: 1 }).addClass('animated');
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_fee , 1000);
+					setTimeout( animate_fee , 1);
 					
 					$(this).addClass('animated');		
 					
@@ -731,13 +724,13 @@
 					
 					setTimeout ( function () {
 							$('#counter-section header').find('.parallax-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#counter-section header').find('.parallax-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_counter , 1000);
+					setTimeout( animate_counter , 1);
 					
 					$(this).addClass('animated');			
 					
@@ -752,13 +745,13 @@
 					
 					setTimeout ( function () {
 							$('#social-section header').find('.parallax-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#social-section header').find('.parallax-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
-					setTimeout( animate_social , 1000);	
+					setTimeout( animate_social , 1);	
 					
 					$(this).addClass('animated');		
 					
@@ -772,7 +765,7 @@
 				
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 										
-					setTimeout( animate_clients , 300 );	
+					setTimeout( animate_clients , 1 );	
 					
 					$(this).addClass('animated');
 									
@@ -788,15 +781,15 @@
 					
 					setTimeout ( function () {
 							$('#testimonial-section header').find('.section-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#testimonial-section header').find('.section-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('.ut-testimonials').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
 					$(this).addClass('animated');
 									
@@ -811,15 +804,15 @@
 					
 					setTimeout ( function () {
 							$('#contact-section header').find('.parallax-title').animate({ opacity: 1 });
-					}, 200 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('#contact-section header').find('.parallax-slogan').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
 					setTimeout ( function () {
 							$('.contact-wrap').animate({ opacity: 1 });
-					}, 600 );
+					}, 1 );
 					
 					$(this).addClass('animated');		
 					
